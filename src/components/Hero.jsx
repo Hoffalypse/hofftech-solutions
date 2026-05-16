@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full ">
 
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] ">
-             Custom <br className="sm:block hidden" />{" "}
+             Modern <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Software</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          For Government.
+          For Public Service.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         We build secure web applications, workflow automation, and AI-powered tools that help government agencies cut manual work, modernize legacy systems, and serve constituents faster. Founded by an engineer with production experience delivering systems for NASA, Lockheed Martin (via PickNik Robotics), and HIPAA-aligned healthcare environments.
