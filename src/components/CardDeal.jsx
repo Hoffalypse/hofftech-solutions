@@ -6,17 +6,17 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-      Revolutionize Your  <br className="sm:block hidden" /> Business's Online Journey
+      Based in Colorado. <br className="sm:block hidden" /> Working Nationally.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      Experience a transformative shift in your company's online presence and unlock new possibilities with our cutting-edge website solutions.
+        HoffTech Solutions is a U.S.-based small business serving federal, state, and local government clients across the country. Single point of contact, no offshore handoffs, and a stack built for the security and reliability requirements of public sector work.
       </p>
 
       <Button styles={`mt-10`} />
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={earth} alt="billing" className="w-[100%] h-[100%]" />
+      <img src={earth} alt="HoffTech Solutions national reach" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );

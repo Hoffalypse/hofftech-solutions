@@ -22,10 +22,10 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Our Sevices 
+        Services Built for <br className="sm:block hidden" /> Public Sector Needs
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      We work with our clients to develop marketing strategies and campaigns that meet their business goals.
+        Focused capabilities for agencies that need to modernize operations, automate manual work, and improve how they serve the people they're accountable to.
       </p>
 
       <Button styles={`mt-10`}/>

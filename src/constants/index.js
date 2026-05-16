@@ -1,15 +1,7 @@
 import {
-  people01,
-  people02,
-  people03,
   facebook,
- 
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   send,
   shield,
   star,
@@ -22,191 +14,101 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Features",
+    title: "Services",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "experience",
+    title: "Experience",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "contact",
+    title: "Contact",
   },
 ];
 
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Web Development",
+    icon: send,
+    title: "Workflow Automation",
     content:
-      "Unlock the potential of your online presence with exceptional web design and development that captivates, engages, and converts your audience like never before.",
+      "Replace manual, time-consuming processes with custom-built systems that reduce errors, save staff hours, and free your team to focus on higher-value work.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "Advanced Security Protocols",
+    title: "Custom Web Applications",
     content:
-      "Experience peace of mind with our state-of-the-art security protocols, ensuring your online presence is safeguarded with the highest level of protection.",
+      "Secure, scalable applications for internal teams or public-facing use — built with role-based access, modern authentication, and a posture aligned with NIST 800-171 controls.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "AI-infused applications",
+    icon: star,
+    title: "AI-Powered Tools",
     content:
-      "Unlock the limitless potential of advanced AI-infused applications and revolutionize the way you work, innovate, and thrive in the digital age.",
+      "Chatbots, document processing, and intelligent automation that reduce response times and workload — built on production-grade infrastructure, not demos.",
   },
 ];
 
-export const feedback = [
+export const credibilitySignals = [
   {
-    id: "feedback-1",
-    content:
-      "Partnering AInnovations was the best decision I made for my business. Your team's creativity, technical proficiency, and unwavering commitment to delivering timely results have made me a truly satisfied customer. Thank you!",
-    name: "Cheryl Huang",
-    title: "CTO Radar Inc",
-    img: people01,
+    id: "cred-1",
+    title: "Registration",
+    value: "SAM.gov Pending",
   },
   {
-    id: "feedback-2",
-    content:
-      "Working with your team has been an absolute pleasure! Their professionalism, expertise, and attention to detail have exceeded my expectations. I couldn't be happier with the results.",
-    name: "Steve Mark",
-    title: "Founder Sync",
-    img: people02,
+    id: "cred-2",
+    title: "NAICS Codes",
+    value: "541511 / 541512 / 541519",
   },
   {
-    id: "feedback-3",
-    content:
-      "I am so glad I chose AInnovations for my project. Your team's dedication, prompt communication, and exceptional skills have made the entire process smooth and enjoyable. I'm thrilled with the final website!",
-    name: "Kenn Gallagher",
-    title: "CEO Whilst",
-    img: people03,
-  },
-];
-
-export const stats = [
-  {
-    id: "stats-1",
-    title: "Web Pages",
-    value: "1200+",
-  },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "65+",
-  },
-  {
-    id: "stats-3",
-    title: "E-Transactions",
-    value: "$83M+",
+    id: "cred-3",
+    title: "Based In",
+    value: "Colorado — Serving Nationally",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Company",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Services",
+        link: "#features",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Experience",
+        link: "#experience",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Contact",
+        link: "/contact",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Contracting",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Capability Statement",
+        link: "/contact",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Subcontracting Inquiries",
+        link: "/contact",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "NAICS: 541511, 541512, 541519",
+        link: "/contact",
       },
     ],
   },
 ];
 
 export const socialMedia = [
-  // {
-  //   id: "social-media-1",
-  //   icon: instagram,
-  //   link: "https://www.instagram.com/",
-  // },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
   },
 ];

@@ -30,7 +30,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Bryan",
           from_email: form.email,
-          to_email: "bhoff1980@gmail.com",
+          to_email: "bryanwienhoff@gmail.com",
           message: form.message,
         },
         "vjQDfUjeSUkJbD3zS"
@@ -58,7 +58,7 @@ const Contact = () => {
       <div>
         <div className="flex justify-center mt-[25px]">
           <a href="./">
-            <img src={blue} className="w-[250px]" />
+            <img src={blue} alt="HoffTech Solutions" className="w-[250px]" />
           </a>
         </div>
       <div className="ml-[60px]">
@@ -114,7 +114,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="What can we do to help your business?"
+                    placeholder="Tell us about your project, contract opportunity, or how we can help."
                     className="bg-tertiary py-4 px-3 placeholder:text-secondary bg-slate-500 text-white rounded-lg outlined-none border-none font-medium"
                   />
                 </label>

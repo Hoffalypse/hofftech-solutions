@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={blue} alt="Ainnovations" className="w-[100px] h-[50px]" />
+      <img src={blue} alt="HoffTech Solutions" className="w-[100px] h-[50px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -20,7 +20,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={nav.id === "contact" ? "/contact" : `#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={nav.id === "contact" ? "/contact" : `#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
