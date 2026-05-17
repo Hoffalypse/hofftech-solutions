@@ -24,16 +24,14 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_5cukdxg",
-        "template_209soxi",
+        "service_g8hgq83",
+        "yb331tj",
         {
-          from_name: form.name,
-          to_name: "Bryan",
-          from_email: form.email,
-          to_email: "bryanwienhoff@gmail.com",
+          name: form.name,
+          email: form.email,
           message: form.message,
         },
-        "vjQDfUjeSUkJbD3zS"
+        "QS5XZPgRxZoDoVsqj"
       )
       .then(
         () => {
