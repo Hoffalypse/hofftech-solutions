@@ -6,13 +6,13 @@ const Hero = () => {
   return (
     <>
 
-      <div className="flex justify-center mt-[-64px] mb-[-196px]">
+      <div className="hidden sm:flex justify-center mt-[-64px] mb-[-196px]">
       <img src={word} alt="HoffTech Solutions" className="w-[40%] relative z-[5] object-contain" />
       </div>
 
-    <section id="home" className={`flex md:flex-row mt-[-40px] flex-col ${styles.paddingY}`}>
+    <section id="home" className={`flex md:flex-row sm:mt-[-40px] mt-[-30px] flex-col ${styles.paddingY}`}>
 
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 translate-y-[100px]`}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 sm:translate-y-[100px]`}>
 
         <div className="flex flex-row justify-between items-center w-full ">
 
