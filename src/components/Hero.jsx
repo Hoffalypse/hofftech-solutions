@@ -6,13 +6,13 @@ const Hero = () => {
   return (
     <>
 
-      <div className="flex justify-center -mt-8 -mb-12">
+      <div className="flex justify-center mt-[-64px] mb-[-196px]">
       <img src={word} alt="HoffTech Solutions" className="w-[40%] relative z-[5] object-contain" />
       </div>
 
     <section id="home" className={`flex md:flex-row mt-[-40px] flex-col ${styles.paddingY}`}>
 
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 translate-y-[100px]`}>
 
         <div className="flex flex-row justify-between items-center w-full ">
 
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 mb-10 relative`}>
-        <img src={robot} alt="HoffTech Solutions" className="w-[100%] h-[100%] relative z-[5] mt-[-100px]" />
+        <img src={robot} alt="HoffTech Solutions" className="w-[100%] h-[100%] relative z-[5] -translate-y-[100px]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
