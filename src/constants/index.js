@@ -110,6 +110,6 @@ export const socialMedia = [
   {
     id: "social-media-3",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/bryan-wienhoff/",
   },
 ];
