@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HoffTech Solutions LLC — Capability Statement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #0891b2;
+      --accent-soft: #cffafe;
+      --divider: #e2e8f0;
+      --bg: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Poppins', -apple-system, Segoe UI, Inter, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+
+    @page {
+      size: Letter;
+      margin: 0;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      padding: 0.4in 0.6in 0.35in;
+      background: var(--bg);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 26pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .brand-name .accent {
+      color: var(--accent);
+    }
+
+    .brand-sub {
+      font-size: 10pt;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .header-doc {
+      text-align: right;
+    }
+
+    .header-doc .label {
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .header-doc .title {
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 2px;
+    }
+
+    /* Tagline */
+    .tagline {
+      font-size: 10pt;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 12px;
+      padding: 7px 12px;
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .tagline strong { color: var(--accent); }
+
+    /* Body grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 18px;
+    }
+
+    .section { margin-bottom: 12px; }
+
+    .section-title {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--divider);
+      margin-bottom: 8px;
+    }
+
+    .section-body { font-size: 10pt; line-height: 1.5; color: var(--ink); }
+    .section-body p { margin-bottom: 6px; }
+    .section-body .muted { color: var(--muted); }
+
+    /* Competencies */
+    .comp-list { list-style: none; }
+    .comp-list li {
+      padding: 5px 0;
+      border-bottom: 1px dotted var(--divider);
+      font-size: 10pt;
+    }
+    .comp-list li:last-child { border-bottom: none; }
+    .comp-list .comp-name { font-weight: 600; color: var(--ink); }
+    .comp-list .comp-desc { color: var(--muted); font-size: 9.5pt; margin-top: 1px; }
+
+    /* Differentiators */
+    .diff-list { list-style: none; }
+    .diff-list li {
+      padding: 4px 0 4px 16px;
+      position: relative;
+      font-size: 10pt;
+      color: var(--ink);
+    }
+    .diff-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Past performance */
+    .pp-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--divider);
+    }
+    .pp-item:last-child { border-bottom: none; }
+    .pp-name {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: var(--ink);
+    }
+    .pp-tag {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .pp-body {
+      font-size: 9.5pt;
+      color: var(--muted);
+      margin-top: 3px;
+      line-height: 1.45;
+    }
+
+    /* Corporate data */
+    .data-table {
+      width: 100%;
+      font-size: 9.5pt;
+      border-collapse: collapse;
+    }
+    .data-table td {
+      padding: 4px 0;
+      border-bottom: 1px solid var(--divider);
+      vertical-align: top;
+    }
+    .data-table td:first-child {
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 8.5pt;
+      width: 40%;
+    }
+    .data-table td:last-child {
+      color: var(--ink);
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    /* Footer / contact bar */
+    .contact-bar {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 2px solid var(--accent);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .contact-block .label {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 2px;
+    }
+
+    .contact-block .value {
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .contact-block .sub {
+      font-size: 8.5pt;
+      color: var(--muted);
+      margin-top: 1px;
+      line-height: 1.25;
+    }
+
+    @media print {
+      body { background: var(--bg); }
+      .page { padding: 0.55in 0.6in; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="brand">
+        <div class="brand-name">Hoff<span class="accent">Tech</span> Solutions LLC</div>
+        <div class="brand-sub">Modern Software for Public Service</div>
+      </div>
+      <div class="header-doc">
+        <div class="label">Capability Statement</div>
+        <div class="title">Federal · State · Local</div>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class="tagline">
+      HoffTech Solutions builds <strong>custom software, workflow automation, and AI-powered tools</strong> that help government agencies cut manual work, modernize legacy systems, and serve constituents faster. Founded by an engineer with production experience on programs delivered to NASA, Lockheed Martin, and U.S. Space Force, and operating a veterinary teleradiology platform handling sensitive medical imaging data.
+    </div>
+
+    <!-- Two-column body -->
+    <div class="grid">
+
+      <!-- Left column -->
+      <div>
+
+        <div class="section">
+          <div class="section-title">Core Competencies</div>
+          <ul class="comp-list">
+            <li>
+              <div class="comp-name">Workflow Automation</div>
+              <div class="comp-desc">Replace manual processes with custom-built systems that reduce errors and save staff hours.</div>
+            </li>
+            <li>
+              <div class="comp-name">Custom Web Applications</div>
+              <div class="comp-desc">Secure, scalable apps for internal teams or public-facing use, aligned with NIST 800-171 controls.</div>
+            </li>
+            <li>
+              <div class="comp-name">AI-Powered Tools</div>
+              <div class="comp-desc">Chatbots, document processing, and intelligent automation built on production infrastructure.</div>
+            </li>
+            <li>
+              <div class="comp-name">System Integration</div>
+              <div class="comp-desc">Connect existing tools and platforms into a unified operational flow.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Differentiators</div>
+          <ul class="diff-list">
+            <li>U.S.-based small business — single point of contact, no offshore handoffs</li>
+            <li>Production experience delivering systems with strict security and reliability requirements</li>
+            <li>Modern, cloud-native stack — no legacy contractor bloat</li>
+            <li>Open to both prime and subcontracting opportunities</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Right column -->
+      <div>
+
+        <div class="section">
+          <div class="section-title">Past Performance</div>
+
+          <div class="pp-item">
+            <div class="pp-name">PickNik Robotics <span class="pp-tag">Aerospace · Defense</span></div>
+            <div class="pp-body">
+              Contributed to production-grade robotics software delivered to NASA Johnson Space Center, Lockheed Martin, and U.S. Space Force programs. Worked on the MoveIt Pro platform for manipulation applications used in space and defense environments.
+            </div>
+          </div>
+
+          <div class="pp-item">
+            <div class="pp-name">Crux Imaging <span class="pp-tag">Veterinary</span></div>
+            <div class="pp-body">
+              Co-founded and operate a production veterinary teleradiology platform built on Next.js, Firebase, and a custom DICOM/PACS pipeline. Handles sensitive medical imaging data with role-based access control and a security posture aligned with NIST 800-171 principles.
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Corporate Data</div>
+          <table class="data-table">
+            <tr>
+              <td>Entity</td>
+              <td>HoffTech Solutions LLC</td>
+            </tr>
+            <tr>
+              <td>Business Type</td>
+              <td>Small Business · U.S.-Based</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Colorado — Serving Nationally</td>
+            </tr>
+            <tr>
+              <td>NAICS Codes</td>
+              <td>
+                541511 Custom Computer Programming<br/>
+                541512 Computer Systems Design<br/>
+                541519 Other Computer Related Services
+              </td>
+            </tr>
+            <tr>
+              <td>UEI / SAM.gov</td>
+              <td>Registration in progress</td>
+            </tr>
+            <tr>
+              <td>Tech Stack</td>
+              <td>React · Next.js · TypeScript · Firebase · Google Cloud · PostgreSQL · Python</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact bar -->
+    <div class="contact-bar">
+      <div class="contact-block">
+        <div class="label">Primary Contact</div>
+        <div class="value">Bryan Wienhoff</div>
+        <div class="sub">Founder</div>
+      </div>
+      <div class="contact-block">
+        <div class="label">Email · Phone</div>
+        <div class="value">bryanwienhoff@gmail.com</div>
+        <div class="sub">(217) 725-2526</div>
+      </div>
+      <div class="contact-block">
+        <div class="label">Web</div>
+        <div class="value">hofftechsolutions.com</div>
+        <div class="sub">Colorado, USA</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

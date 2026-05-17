@@ -44,7 +44,13 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  <a href={link.link}>{link.name}</a>
+                  <a
+                    href={link.link}
+                    target={link.link.endsWith(".pdf") || link.link.startsWith("http") ? "_blank" : undefined}
+                    rel={link.link.endsWith(".pdf") || link.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>

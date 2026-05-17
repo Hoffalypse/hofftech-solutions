@@ -92,7 +92,7 @@ export const footerLinks = [
     links: [
       {
         name: "Capability Statement",
-        link: "/contact",
+        link: "/capability-statement.pdf",
       },
       {
         name: "Subcontracting Inquiries",

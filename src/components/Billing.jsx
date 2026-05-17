@@ -4,7 +4,7 @@ import styles, { layout } from "../style";
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img src={card} alt="HoffTech Solutions" className="w-[100%] h-[100%] relative z-[5]" />
+      <img src={card} alt="HoffTech Solutions" className="w-[100%] relative z-[5] object-contain" />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

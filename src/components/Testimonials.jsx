@@ -10,10 +10,10 @@ const experienceItems = [
   },
   {
     id: "exp-2",
-    label: "Healthcare / Sensitive Data",
-    title: "Crux Veterinary Imaging Collective",
+    label: "Veterinary / Sensitive Data",
+    title: "Crux Imaging",
     body:
-      "Co-founded and operate a production radiology platform built on Next.js, Firebase, and a custom DICOM/PACS pipeline. Handles sensitive medical imaging data with role-based access control and a security posture aligned with HIPAA and NIST 800-171 principles.",
+      "Co-founded and operate a production veterinary teleradiology platform built on Next.js, Firebase, and a custom DICOM/PACS pipeline. Handles sensitive medical imaging data with role-based access control and a security posture aligned with NIST 800-171 principles.",
   },
   {
     id: "exp-3",

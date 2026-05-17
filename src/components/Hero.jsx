@@ -29,7 +29,7 @@ const Hero = () => {
           For Public Service.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        We build secure web applications, workflow automation, and AI-powered tools that help government agencies cut manual work, modernize legacy systems, and serve constituents faster. Founded by an engineer with production experience delivering systems for NASA, Lockheed Martin (via PickNik Robotics), and HIPAA-aligned healthcare environments.
+        We build secure web applications, workflow automation, and AI-powered tools that help government agencies cut manual work, modernize legacy systems, and serve constituents faster. Founded by an engineer with production experience delivering systems for NASA, Lockheed Martin, and U.S. Space Force programs (via PickNik Robotics), and operating a veterinary teleradiology platform handling sensitive medical imaging data.
         </p>
       </div>
 

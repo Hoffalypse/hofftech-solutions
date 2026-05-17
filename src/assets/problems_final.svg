@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1380" width="1500" height="1380">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#152128"/>
+      <stop offset="50%" stop-color="#0c1014"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c2128" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#13181e" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#2dd4bf" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="1380" fill="url(#bgGrad)"/>
+
+  <!-- Concentric circles -->
+  <g fill="none" stroke="#1e4750" stroke-width="2" opacity="0.55">
+    <circle cx="750" cy="710" r="180"/>
+    <circle cx="750" cy="710" r="310"/>
+    <circle cx="750" cy="710" r="450"/>
+    <circle cx="750" cy="710" r="600"/>
+  </g>
+
+  <!-- =================== LEFT CARD: Modernize Legacy =================== -->
+  <g filter="url(#cardShadow)">
+    <rect x="90" y="320" width="500" height="450" rx="34" fill="url(#cardGrad)" stroke="#2a323b" stroke-width="1"/>
+    <rect x="290" y="380" width="110" height="110" rx="22" fill="#0d1418" stroke="#1f3940" stroke-width="1.5"/>
+    <g transform="translate(310,402)" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M62 24 A28 28 0 1 0 64 44"/>
+      <polyline points="50,4 62,24 42,30"/>
+    </g>
+    <text x="340" y="565" text-anchor="middle" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#ffffff">Modernize Legacy</text>
+    <text x="340" y="620" text-anchor="middle" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#8b96a3">Retire outdated tools with apps</text>
+    <text x="340" y="652" text-anchor="middle" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#8b96a3">your team will actually use.</text>
+  </g>
+
+  <!-- =================== TOP-RIGHT CARD: Response Time =================== -->
+  <g filter="url(#cardShadow)">
+    <rect x="720" y="200" width="730" height="560" rx="34" fill="url(#cardGrad)" stroke="#2a323b" stroke-width="1"/>
+
+    <text x="770" y="285" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="42" font-weight="700" fill="#ffffff">Response Time</text>
+
+    <!-- Dropdown -->
+    <rect x="1240" y="250" width="160" height="48" rx="14" fill="#0d1418" stroke="#1f3940" stroke-width="1"/>
+    <text x="1275" y="282" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="500" fill="#cfd6de">90 days</text>
+    <path d="M1372 273 l10 10 l10 -10" stroke="#cfd6de" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Stat blocks -->
+    <text x="770" y="380" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="46" font-weight="700" fill="#2dd4bf">48 hrs</text>
+    <text x="770" y="416" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#8b96a3">Old average</text>
+
+    <text x="1400" y="380" text-anchor="end" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="46" font-weight="700" fill="#2dd4bf">2.4 hrs</text>
+    <text x="1400" y="416" text-anchor="end" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="400" fill="#8b96a3">New average</text>
+
+    <!-- Downtrend line -->
+    <path d="M 770 470 C 830 490, 880 560, 930 580 S 1010 600, 1080 620 S 1180 670, 1240 660 S 1380 650, 1410 645"
+          fill="none" stroke="#1f3940" stroke-width="3"/>
+    <path d="M 770 470 C 830 490, 880 560, 930 580 S 1010 600, 1080 620 S 1180 670, 1240 660 S 1380 650, 1410 645"
+          fill="none" stroke="url(#lineGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+
+    <!-- Week pills -->
+    <g font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="500" fill="#8b96a3">
+      <text x="790" y="715">W1</text>
+      <text x="880" y="715">W2</text>
+      <text x="970" y="715">W3</text>
+      <rect x="1050" y="690" width="78" height="36" rx="10" fill="#2dd4bf"/>
+      <text x="1089" y="715" text-anchor="middle" fill="#0a0f12" font-weight="700">W4</text>
+      <text x="1160" y="715">W5</text>
+      <text x="1250" y="715">W6</text>
+      <text x="1340" y="715">W7</text>
+    </g>
+  </g>
+
+  <!-- =================== BOTTOM CARD: Unified Platform =================== -->
+  <g filter="url(#cardShadow)">
+    <rect x="330" y="860" width="900" height="340" rx="34" fill="url(#cardGrad)" stroke="#2a323b" stroke-width="1"/>
+    <text x="380" y="930" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#ffffff">Unified Platform</text>
+    <text x="380" y="965" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif" font-size="20" font-weight="400" fill="#8b96a3">One place for every team and tool</text>
+
+    <g stroke="#2dd4bf" stroke-width="2" opacity="0.5">
+      <line x1="900" y1="1030" x2="780" y2="970"/>
+      <line x1="900" y1="1030" x2="780" y2="1090"/>
+      <line x1="900" y1="1030" x2="1020" y2="970"/>
+      <line x1="900" y1="1030" x2="1020" y2="1090"/>
+      <line x1="900" y1="1030" x2="1140" y2="1030"/>
+      <line x1="900" y1="1030" x2="700" y2="1030"/>
+    </g>
+
+    <circle cx="900" cy="1030" r="42" fill="#2dd4bf" filter="url(#glow)"/>
+    <circle cx="900" cy="1030" r="42" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+    <text x="900" y="1042" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="32" font-weight="800" fill="#0a0f12">+</text>
+
+    <g>
+      <circle cx="780" cy="970" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="780" y="978" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">A</text>
+
+      <circle cx="780" cy="1090" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="780" y="1098" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">B</text>
+
+      <circle cx="1020" cy="970" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="1020" y="978" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">C</text>
+
+      <circle cx="1020" cy="1090" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="1020" y="1098" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">D</text>
+
+      <circle cx="700" cy="1030" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="700" y="1038" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">E</text>
+
+      <circle cx="1140" cy="1030" r="28" fill="#0d1418" stroke="#2dd4bf" stroke-width="2"/>
+      <text x="1140" y="1038" text-anchor="middle" font-family="Inter,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#2dd4bf">F</text>
+    </g>
+  </g>
+</svg>
