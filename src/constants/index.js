@@ -53,8 +53,9 @@ export const features = [
 export const credibilitySignals = [
   {
     id: "cred-1",
-    title: "Registration",
-    value: "SAM.gov Pending",
+    title: "Projects",
+    value: "NASA / Lockheed / Space Force",
+    subtitle: "via PickNik",
   },
   {
     id: "cred-2",

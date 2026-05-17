@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <>
 
-      <div className="flex justify-center">
-      <img src={word} alt="HoffTech Solutions" className=" w-[60%] h-[80%] relative z-[5]" />
+      <div className="flex justify-center -mt-8 -mb-12">
+      <img src={word} alt="HoffTech Solutions" className="w-[40%] relative z-[5] object-contain" />
       </div>
 
     <section id="home" className={`flex md:flex-row mt-[-40px] flex-col ${styles.paddingY}`}>

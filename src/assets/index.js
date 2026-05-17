@@ -24,8 +24,8 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import earth from "./earth.png";
-import blue from "./ainnovationsblue.png";
-import word from "./ainnovationsword.png";
+import blue from "./hofftech-nobg.png";
+import word from "./hofftech-nobg.png";
 
 
 export {

@@ -12,7 +12,7 @@ const Footer = () => (
         <img
           src={blue}
           alt="HoffTech Solutions"
-          className="w-[270px] h-[110px] "
+          className="w-[270px] h-[110px] object-contain object-left"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           Custom software, automation, and AI tools built for government agencies and the organizations that serve them.

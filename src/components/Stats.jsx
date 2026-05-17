@@ -12,6 +12,11 @@ const Stats = () => (
           <h4 className="font-poppins font-semibold text-[22px] leading-[30px] text-white mt-1">
             {signal.value}
           </h4>
+          {signal.subtitle && (
+            <p className="font-poppins font-normal text-[13px] leading-[18px] text-dimWhite mt-1 italic">
+              {signal.subtitle}
+            </p>
+          )}
         </div>
       </div>
     ))}
